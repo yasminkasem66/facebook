@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import Facebook from './component/Facebook';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 
 function App() {
   return (
@@ -11,7 +13,12 @@ function App() {
           authenticate  with facebook
         </p>
       </header>
-      <Facebook/>
+      <Facebook />
+      
+      <MessengerCustomerChat
+        pageId="106293271909112"
+        appId="424217142629496"
+      />
     </div>
   );
 }
